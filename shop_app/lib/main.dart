@@ -15,8 +15,9 @@ class MyApp extends StatelessWidget {
       title: 'Shop App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.brown,
-      ),
+          fontFamily: 'Raleway',
+          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.brown)
+              .copyWith(secondary: Colors.pink)),
       home: const MyHomePage(),
     );
   }

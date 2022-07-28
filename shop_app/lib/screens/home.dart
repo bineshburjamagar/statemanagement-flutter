@@ -43,8 +43,14 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: SafeArea(
+        child: Container(
+          width: MediaQuery.of(context).size.width / 2,
+          color: Colors.brown.withOpacity(0.7),
+        ),
+      ),
       appBar: AppBar(
-        title: const Text('OUR PRODUCTS'),
+        title: const Text('SHOP APP'),
       ),
       body: GridView.builder(
           padding: const EdgeInsets.all(10.0),
