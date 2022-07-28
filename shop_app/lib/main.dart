@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Shop App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.cyan,
+        primarySwatch: Colors.brown,
       ),
       home: const MyHomePage(),
     );

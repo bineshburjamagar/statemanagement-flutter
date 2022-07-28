@@ -44,20 +44,22 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SHOP APP'),
+        title: const Text('OUR PRODUCTS'),
       ),
       body: GridView.builder(
           padding: const EdgeInsets.all(10.0),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
-              childAspectRatio: 3 / 2,
+              childAspectRatio: 1.5 / 2,
               crossAxisSpacing: 10,
               mainAxisSpacing: 10),
           itemCount: loadedProduct.length,
           itemBuilder: (context, index) => ProductItems(
-              id: loadedProduct[index].id,
-              title: loadedProduct[index].title,
-              imageUrl: loadedProduct[index].imageUrl)),
+                id: loadedProduct[index].id,
+                title: loadedProduct[index].title,
+                imageUrl: loadedProduct[index].imageUrl,
+                price: loadedProduct[index].price,
+              )),
     );
   }
 }
