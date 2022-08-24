@@ -50,7 +50,11 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       appBar: AppBar(
-        title: const Text('SHOP APP'),
+        centerTitle: true,
+        title: const Text(
+          '-SHOP APP-',
+          style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+        ),
       ),
       body: GridView.builder(
           padding: const EdgeInsets.all(10.0),
